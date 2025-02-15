@@ -6,9 +6,10 @@ import { AppContext } from '../context/AppContext';
 const Navbar = () => {
 
   const {user} = useContext(AppContext)
-  const navigate = useNavigate() 
+  const navigate = useNavigate() //On click any link this will redirect to page
 
   return (
+    // <div className='flex items-center justify-between py-4'></div>
     <div className='flex items-center justify-between py-4' style={{ backgroundColor: '#d0dcdd' }}>
         <Link to = '/'><img src= {assets.logo} alt="" className='w-30 sm:w-38 lg:w-46 h-6 sm:h-12 lg:h-13'/></Link>
 
